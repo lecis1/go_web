@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_web_programming/src/gobasic"
+	"os"
 )
 
 func main() {
@@ -23,4 +24,20 @@ func main() {
 	fmt.Println("odd elements of slice are: ", odd)
 	even := gobasic.Filter(slice, gobasic.IsEven)
 	fmt.Println("even elements of slice are: ", even)
+
+	var user = os.Getenv("USER")
+
+	fmt.Println("user = ", user)
+
+	person := &gobasic.Person{
+		Name: "Alex",
+		Age:  26,
+	}
+
+	person.PersonInfo()
+
+	gobasic.StudentInfo()
+
+	gobasic.CalcBox()
+
 }
