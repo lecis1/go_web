@@ -102,4 +102,8 @@ func CalcBox() {
 	fmt.Println("The color of the second one is", boxes[1].color.String())
 
 	fmt.Println("Obviously, now, the, biggest one is", boxes.BiggestColor().String())
+
+	// 实现同样的功能
+	fmt.Println("The biggest one is", boxes.BiggestColor().String())
+	fmt.Println("The biggest one is", boxes.BiggestColor())
 }
