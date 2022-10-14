@@ -40,4 +40,10 @@ func main() {
 
 	gobasic.CalcBox()
 
+	gobasic.InterfaceTest()
+
+	gobasic.StringTest()
+
+	gobasic.TypeElement()
+
 }
